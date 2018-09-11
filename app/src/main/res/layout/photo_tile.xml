@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tile_portrait_height"
+    android:background="@color/details_background" >
+
+    <RelativeLayout
+        android:id="@+id/photo_container"
+        android:layout_width="@dimen/photo_size"
+        android:layout_height="@dimen/photo_size"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/text_margin" >
+        <ImageView
+            android:id="@+id/photo_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/progress_min_size"
+            android:minWidth="@dimen/progress_min_size"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/photo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photo_container"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/text_margin"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Title" />
+
+</RelativeLayout>

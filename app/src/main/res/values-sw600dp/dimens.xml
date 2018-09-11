@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_size">120dp</dimen>
+    <dimen name="tile_height">200dp</dimen>
+    <dimen name="tile_portrait_height">170dp</dimen>
+</resources>
